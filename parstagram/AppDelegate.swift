@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://whispering-sierra-37158.herokuapp.com/parse"
             })
         )
+        
+
         return true
     }
 

@@ -72,7 +72,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // This image is very large, Heroku has a limit of size image can upload -> import Alamofire and resize it
         let size = CGSize(width: 300, height: 300)
         
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
         
         imageView.image = scaledImage
         
